@@ -1,4 +1,4 @@
-import type { MSWController } from "./MSWController";
+import type { HandlerEnabledState } from "./mswController";
 
 declare global {
   interface Window {

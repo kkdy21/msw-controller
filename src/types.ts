@@ -1,4 +1,5 @@
 import type { RequestHandler } from "msw";
+
 export interface MockHandlerItem {
   id: string;
   description: string;
