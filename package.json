@@ -1,0 +1,33 @@
+{
+  "name": "msw-controller",
+  "version": "1.0.0",
+  "description": "A controller to dynamically manage MSW handlers in the browser.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "msw",
+    "mock",
+    "api",
+    "handler",
+    "controller"
+  ],
+  "author": "Daeyeon KO",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "msw": "^2.8.4"
+  },
+  "peerDependencies": {
+    "msw": "^2.8.4"
+  }
+}
