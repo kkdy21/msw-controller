@@ -9,6 +9,8 @@ declare global {
       listHandlers: () => void;
       enableAllHandlers: () => Promise<void>;
       disableAllHandlers: () => Promise<void>;
+      enableGroup: (groupId: string) => Promise<void>;
+      disableGroup: (groupId: string) => Promise<void>;
       getCurrentConfig: () => HandlerEnabledState;
       saveConfigToLocalStorage: () => Promise<void>;
       loadConfigFromLocalStorage: () => Promise<void>;

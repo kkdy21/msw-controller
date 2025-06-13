@@ -400,6 +400,8 @@ export class MSWController {
         logKey("HELP_LIST_HANDLERS");
         logKey("HELP_ENABLE_HANDLER");
         logKey("HELP_DISABLE_HANDLER");
+        logKey("HELP_ENABLE_GROUP");
+        logKey("HELP_DISABLE_GROUP");
         logKey("HELP_ENABLE_ALL");
         logKey("HELP_DISABLE_ALL");
         logKey("HELP_GET_CONFIG");
