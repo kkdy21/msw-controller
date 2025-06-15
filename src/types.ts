@@ -7,7 +7,6 @@ export interface MockHandlerItem {
 }
 
 export interface MockHandlerGroup {
-  id: string;
   groupName: string;
   description: string;
   handlers: Record<string, MockHandlerItem>;

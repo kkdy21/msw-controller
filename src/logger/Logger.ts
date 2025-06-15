@@ -83,4 +83,8 @@ export class Logger {
       consoleMethod(...args);
     }
   }
+
+  public isSilent(): boolean {
+    return this.level === "silent";
+  }
 }

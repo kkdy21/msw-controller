@@ -171,19 +171,12 @@ export class MSWController {
       if (!this.configInitialized) this.initializeRuntimeConfig();
       const activeHandlers = this.getConfiguredRequestHandlers();
 
-      if (activeHandlers.length === 0) {
-        this.logger.log("NO_ACTIVE_HANDLERS_NO_START");
-        this.worker = null;
-        this.mswWorkerStarted = false;
-        if (window.mswControl) {
-          this.logger.log("HOW_TO_ENABLE_HANDLERS_HINT");
-        }
-        return;
-      }
-
       try {
         this.worker = setupWorker(...activeHandlers);
-        await this.worker.start({ onUnhandledRequest: "bypass" });
+        await this.worker.start({
+          onUnhandledRequest: this.logger.isSilent() ? "bypass" : "warn",
+          quiet: this.logger.isSilent(),
+        });
         window.dispatchEvent(new CustomEvent("mswStateChanged"));
         this.mswWorkerStarted = true;
         this.logger.log("WORKER_STARTED", { count: activeHandlers.length });
