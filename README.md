@@ -22,15 +22,15 @@ A TypeScript library for dynamically managing MSW (Mock Service Worker) handlers
 - 🔄 **Real-time Changes**: Modify handler states without a page refresh.
 - 📝 **Detailed Logging**: A useful logging system for development.
 
-## 🚀 MSW DevTools Extension (Coming Soon)
+## 🚀 MSW DevTools Extension
 
-For an even better development experience, we are preparing an **MSW DevTools Controller** Chrome extension. This extension will allow you to manage MSW handlers through an intuitive UI within the browser's developer tools.
+For an even better development experience, the **MSW DevTools Controller** Chrome extension has been released. This extension allows you to manage MSW handlers through an intuitive UI within the browser's developer tools.
 
 - **GUI-based Control**: Enable/disable handlers and groups with a click, no console commands needed.
 - **Real-time Status Check**: Instantly see which handlers are currently active.
 - **Easy Debugging**: Improve debugging efficiency by easily controlling specific API mock responses in complex scenarios.
 
-Stay tuned for the release!
+[Install from Chrome Web Store](https://chromewebstore.google.com/detail/fnnfncfehcejpfapniihdfgnnlpfnini?utm_source=item-share-cb)
 
 ## Installation
 
@@ -330,15 +330,14 @@ npm run build
 - 🔄 **실시간 변경**: 페이지 새로고침 없이 핸들러 상태 변경
 - 📝 **상세 로깅**: 개발 과정에서 유용한 로그 시스템
 
-## 🚀 MSW DevTools 확장 프로그램 (출시 예정)
+## 🚀 MSW DevTools 확장 프로그램
 
-더욱 편리한 개발 경험을 위해 **MSW DevTools Controller** 크롬 확장 프로그램을 준비하고 있습니다. 이 확장 프로그램을 사용하면 브라우저 개발자 도구 내에서 직관적인 UI를 통해 MSW 핸들러를 관리할 수 있습니다.
-
+더욱 편리한 개발 경험을 위해 **MSW DevTools Controller** 크롬 확장 프로그램이 출시되었습니다. 이 확장 프로그램을 사용하면 브라우저 개발자 도구 내에서 직관적인 UI를 통해 MSW 핸들러를 관리할 수 있습니다.
 - **GUI 기반 제어**: 콘솔 명령어를 입력할 필요 없이 클릭만으로 핸들러와 그룹을 활성화/비활성화할 수 있습니다.
 - **실시간 상태 확인**: 현재 어떤 핸들러가 활성화되어 있는지 한눈에 파악할 수 있습니다.
 - **간편한 디버깅**: 복잡한 시나리오에서 특정 API 모의 응답을 쉽게 제어하여 디버깅 효율을 높입니다.
 
-출시 소식을 기대해주세요!
+[Chrome 웹 스토어에서 설치하기](https://chromewebstore.google.com/detail/fnnfncfehcejpfapniihdfgnnlpfnini?utm_source=item-share-cb)
 
 ## 설치
 
